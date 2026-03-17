@@ -24,6 +24,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
+            'first_node = frog_pkg.scripts.first_node:main',   # ← добавляем эту строку
         ],
     },
 )
