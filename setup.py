@@ -1,4 +1,6 @@
 from setuptools import find_packages, setup
+import os
+from glob import glob
 
 package_name = 'frog_pkg'
 
@@ -10,6 +12,8 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
+        # ПРАВИЛЬНЫЙ ПУТЬ — launch в корне пакета
+        (os.path.join('share', package_name, 'launch'), glob('launch/*.py')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -17,19 +21,10 @@ setup(
     maintainer_email='olya@todo.todo',
     description='TODO: Package description',
     license='TODO: License declaration',
-    extras_require={
-        'test': [
-            'pytest',
-        ],
-    },
+    tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'first_node = frog_pkg.scripts.first_node:main',   # ← добавляем эту строку
-            'PR1_time_node = frog_pkg.scripts.PR1_time_node:main',   # ← добавляем эту строку
-            'talker = frog_pkg.talker:main',   # ← добавляем эту строку
-            'listener = frog_pkg.listener:main',   # ← добавляем эту строку
-            'even_number_publisher = frog_pkg.scripts.even_number_publisher:main',   # ← добавляем эту строку
-            'overflow_listener = frog_pkg.scripts.overflow_listener:main',
+            'even_number_publisher = frog_pkg.scripts.even_number_publisher:main',
         ],
     },
 )
