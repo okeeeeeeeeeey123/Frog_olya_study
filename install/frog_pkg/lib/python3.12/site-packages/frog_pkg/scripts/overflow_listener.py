@@ -29,8 +29,8 @@ class Listener(Node):
         # msg.data — это строка внутри сообщения
         self.get_logger().info(f"!!! ПЕРЕПОЛНЕНИЕ !!! Получено значение: 100")
 
-def main(args=None):
-    rclpy.init(args=args)                   # стартуем ROS 2
+def main():
+    rclpy.init()                    # стартуем ROS 2
     node = Listener()               # создаём наш узел
     try:
         rclpy.spin(node)            # крутимся и ждём сообщений

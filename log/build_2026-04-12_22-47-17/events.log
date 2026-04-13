@@ -1,0 +1,78 @@
+[0.000000] (-) TimerEvent: {}
+[0.000560] (frog_pkg) JobQueued: {'identifier': 'frog_pkg', 'dependencies': OrderedDict()}
+[0.000596] (frog_pkg) JobStarted: {'identifier': 'frog_pkg'}
+[0.099770] (-) TimerEvent: {}
+[0.200037] (-) TimerEvent: {}
+[0.300286] (-) TimerEvent: {}
+[0.400595] (-) TimerEvent: {}
+[0.500812] (-) TimerEvent: {}
+[0.601146] (-) TimerEvent: {}
+[0.701504] (-) TimerEvent: {}
+[0.791165] (frog_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', 'build/frog_pkg', 'build', '--build-base', '/home/olya/ros2_ws/src/frog_pkg/build/frog_pkg/build', 'install', '--record', '/home/olya/ros2_ws/src/frog_pkg/build/frog_pkg/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/olya/ros2_ws/src/frog_pkg', 'env': {'USER': 'olya', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'OLDPWD': '/home/olya/ros2_ws', 'HOME': '/home/olya', 'LESS': '-R', 'DESKTOP_SESSION': 'ubuntu', 'ZSH': '/home/olya/.oh-my-zsh', 'LSCOLORS': 'Gxfxcxdxbxegedabagacad', 'GTK_MODULES': 'gail:atk-bridge', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'PAGER': 'less', 'ROS_PYTHON_VERSION': '3', 'SYSTEMD_EXEC_PID': '3041', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'COLORTERM': 'truecolor', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'COLCON_PREFIX_PATH': '/home/olya/ros2_ws/install', 'LOGNAME': 'olya', '_': '/usr/bin/colcon', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'ROS_VERSION': '2', 'USERNAME': 'olya', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/olya-Zenbook-UP5401EA-UP5401EA:@/tmp/.ICE-unix/2995,unix/olya-Zenbook-UP5401EA-UP5401EA:/tmp/.ICE-unix/2995', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/9b0e384a_fb54_41a0_88fe_9f881e6baddc', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LANG': 'en_US.UTF-8', 'XDG_SESSION_DESKTOP': 'ubuntu', 'GNOME_TERMINAL_SERVICE': ':1.119', 'XMODIFIERS': '@im=ibus', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.OLHHN3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/olya/ros2_ws/install/frog_pkg:/opt/ros/jazzy', 'SHELL': '/usr/bin/zsh', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'QT_IM_MODULE': 'ibus', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'LC_ALL': 'en_US.UTF-8', 'PWD': '/home/olya/ros2_ws/src/frog_pkg/build/frog_pkg', 'XDG_DATA_DIRS': '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/olya/ros2_ws/src/frog_pkg/build/frog_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/lib/python3.12/site-packages:/home/olya/ros2_ws/install/frog_pkg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'VTE_VERSION': '7600', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[0.801617] (-) TimerEvent: {}
+[0.901804] (-) TimerEvent: {}
+[1.002066] (-) TimerEvent: {}
+[1.051544] (frog_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[1.051957] (frog_pkg) StdoutLine: {'line': b'creating build/frog_pkg/frog_pkg.egg-info\n'}
+[1.069272] (frog_pkg) StdoutLine: {'line': b'writing build/frog_pkg/frog_pkg.egg-info/PKG-INFO\n'}
+[1.069440] (frog_pkg) StdoutLine: {'line': b'writing dependency_links to build/frog_pkg/frog_pkg.egg-info/dependency_links.txt\n'}
+[1.069542] (frog_pkg) StdoutLine: {'line': b'writing entry points to build/frog_pkg/frog_pkg.egg-info/entry_points.txt\n'}
+[1.069654] (frog_pkg) StdoutLine: {'line': b'writing requirements to build/frog_pkg/frog_pkg.egg-info/requires.txt\n'}
+[1.069736] (frog_pkg) StdoutLine: {'line': b'writing top-level names to build/frog_pkg/frog_pkg.egg-info/top_level.txt\n'}
+[1.069816] (frog_pkg) StdoutLine: {'line': b"writing manifest file 'build/frog_pkg/frog_pkg.egg-info/SOURCES.txt'\n"}
+[1.102179] (-) TimerEvent: {}
+[1.108114] (frog_pkg) StdoutLine: {'line': b"reading manifest file 'build/frog_pkg/frog_pkg.egg-info/SOURCES.txt'\n"}
+[1.109110] (frog_pkg) StdoutLine: {'line': b"writing manifest file 'build/frog_pkg/frog_pkg.egg-info/SOURCES.txt'\n"}
+[1.109288] (frog_pkg) StdoutLine: {'line': b'running build\n'}
+[1.109394] (frog_pkg) StdoutLine: {'line': b'running build_py\n'}
+[1.109541] (frog_pkg) StdoutLine: {'line': b'creating /home/olya/ros2_ws/src/frog_pkg/build/frog_pkg/build\n'}
+[1.109662] (frog_pkg) StdoutLine: {'line': b'creating /home/olya/ros2_ws/src/frog_pkg/build/frog_pkg/build/lib\n'}
+[1.109761] (frog_pkg) StdoutLine: {'line': b'creating /home/olya/ros2_ws/src/frog_pkg/build/frog_pkg/build/lib/frog_pkg\n'}
+[1.109863] (frog_pkg) StdoutLine: {'line': b'copying frog_pkg/listener.py -> /home/olya/ros2_ws/src/frog_pkg/build/frog_pkg/build/lib/frog_pkg\n'}
+[1.110006] (frog_pkg) StdoutLine: {'line': b'copying frog_pkg/talker.py -> /home/olya/ros2_ws/src/frog_pkg/build/frog_pkg/build/lib/frog_pkg\n'}
+[1.110101] (frog_pkg) StdoutLine: {'line': b'copying frog_pkg/__init__.py -> /home/olya/ros2_ws/src/frog_pkg/build/frog_pkg/build/lib/frog_pkg\n'}
+[1.110190] (frog_pkg) StdoutLine: {'line': b'creating /home/olya/ros2_ws/src/frog_pkg/build/frog_pkg/build/lib/frog_pkg/scripts\n'}
+[1.110321] (frog_pkg) StdoutLine: {'line': b'copying frog_pkg/scripts/PR1_time_node.py -> /home/olya/ros2_ws/src/frog_pkg/build/frog_pkg/build/lib/frog_pkg/scripts\n'}
+[1.110392] (frog_pkg) StdoutLine: {'line': b'copying frog_pkg/scripts/even_number_publisher.py -> /home/olya/ros2_ws/src/frog_pkg/build/frog_pkg/build/lib/frog_pkg/scripts\n'}
+[1.110473] (frog_pkg) StdoutLine: {'line': b'copying frog_pkg/scripts/overflow_listener.py -> /home/olya/ros2_ws/src/frog_pkg/build/frog_pkg/build/lib/frog_pkg/scripts\n'}
+[1.110541] (frog_pkg) StdoutLine: {'line': b'copying frog_pkg/scripts/first_node.py -> /home/olya/ros2_ws/src/frog_pkg/build/frog_pkg/build/lib/frog_pkg/scripts\n'}
+[1.110600] (frog_pkg) StdoutLine: {'line': b'copying frog_pkg/scripts/__init__.py -> /home/olya/ros2_ws/src/frog_pkg/build/frog_pkg/build/lib/frog_pkg/scripts\n'}
+[1.110688] (frog_pkg) StdoutLine: {'line': b'running install\n'}
+[1.117621] (frog_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[1.136967] (frog_pkg) StdoutLine: {'line': b'creating /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/lib/python3.12/site-packages/frog_pkg\n'}
+[1.137127] (frog_pkg) StdoutLine: {'line': b'creating /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/lib/python3.12/site-packages/frog_pkg/scripts\n'}
+[1.137228] (frog_pkg) StdoutLine: {'line': b'copying /home/olya/ros2_ws/src/frog_pkg/build/frog_pkg/build/lib/frog_pkg/scripts/PR1_time_node.py -> /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/lib/python3.12/site-packages/frog_pkg/scripts\n'}
+[1.137354] (frog_pkg) StdoutLine: {'line': b'copying /home/olya/ros2_ws/src/frog_pkg/build/frog_pkg/build/lib/frog_pkg/scripts/even_number_publisher.py -> /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/lib/python3.12/site-packages/frog_pkg/scripts\n'}
+[1.137451] (frog_pkg) StdoutLine: {'line': b'copying /home/olya/ros2_ws/src/frog_pkg/build/frog_pkg/build/lib/frog_pkg/scripts/overflow_listener.py -> /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/lib/python3.12/site-packages/frog_pkg/scripts\n'}
+[1.137545] (frog_pkg) StdoutLine: {'line': b'copying /home/olya/ros2_ws/src/frog_pkg/build/frog_pkg/build/lib/frog_pkg/scripts/first_node.py -> /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/lib/python3.12/site-packages/frog_pkg/scripts\n'}
+[1.137665] (frog_pkg) StdoutLine: {'line': b'copying /home/olya/ros2_ws/src/frog_pkg/build/frog_pkg/build/lib/frog_pkg/scripts/__init__.py -> /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/lib/python3.12/site-packages/frog_pkg/scripts\n'}
+[1.137790] (frog_pkg) StdoutLine: {'line': b'copying /home/olya/ros2_ws/src/frog_pkg/build/frog_pkg/build/lib/frog_pkg/listener.py -> /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/lib/python3.12/site-packages/frog_pkg\n'}
+[1.137866] (frog_pkg) StdoutLine: {'line': b'copying /home/olya/ros2_ws/src/frog_pkg/build/frog_pkg/build/lib/frog_pkg/talker.py -> /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/lib/python3.12/site-packages/frog_pkg\n'}
+[1.137927] (frog_pkg) StdoutLine: {'line': b'copying /home/olya/ros2_ws/src/frog_pkg/build/frog_pkg/build/lib/frog_pkg/__init__.py -> /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/lib/python3.12/site-packages/frog_pkg\n'}
+[1.138188] (frog_pkg) StdoutLine: {'line': b'byte-compiling /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/lib/python3.12/site-packages/frog_pkg/scripts/PR1_time_node.py to PR1_time_node.cpython-312.pyc\n'}
+[1.138561] (frog_pkg) StdoutLine: {'line': b'byte-compiling /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/lib/python3.12/site-packages/frog_pkg/scripts/even_number_publisher.py to even_number_publisher.cpython-312.pyc\n'}
+[1.139302] (frog_pkg) StdoutLine: {'line': b'byte-compiling /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/lib/python3.12/site-packages/frog_pkg/scripts/overflow_listener.py to overflow_listener.cpython-312.pyc\n'}
+[1.139750] (frog_pkg) StdoutLine: {'line': b'byte-compiling /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/lib/python3.12/site-packages/frog_pkg/scripts/first_node.py to first_node.cpython-312.pyc\n'}
+[1.139977] (frog_pkg) StdoutLine: {'line': b'byte-compiling /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/lib/python3.12/site-packages/frog_pkg/scripts/__init__.py to __init__.cpython-312.pyc\n'}
+[1.140124] (frog_pkg) StdoutLine: {'line': b'byte-compiling /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/lib/python3.12/site-packages/frog_pkg/listener.py to listener.cpython-312.pyc\n'}
+[1.140668] (frog_pkg) StdoutLine: {'line': b'byte-compiling /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/lib/python3.12/site-packages/frog_pkg/talker.py to talker.cpython-312.pyc\n'}
+[1.141009] (frog_pkg) StdoutLine: {'line': b'byte-compiling /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/lib/python3.12/site-packages/frog_pkg/__init__.py to __init__.cpython-312.pyc\n'}
+[1.141138] (frog_pkg) StdoutLine: {'line': b'running install_data\n'}
+[1.141226] (frog_pkg) StdoutLine: {'line': b'creating /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/share/ament_index\n'}
+[1.141314] (frog_pkg) StdoutLine: {'line': b'creating /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/share/ament_index/resource_index\n'}
+[1.141409] (frog_pkg) StdoutLine: {'line': b'creating /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/share/ament_index/resource_index/packages\n'}
+[1.141526] (frog_pkg) StdoutLine: {'line': b'copying resource/frog_pkg -> /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/share/ament_index/resource_index/packages\n'}
+[1.141608] (frog_pkg) StdoutLine: {'line': b'copying package.xml -> /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/share/frog_pkg\n'}
+[1.141705] (frog_pkg) StdoutLine: {'line': b'creating /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/share/frog_pkg/launch\n'}
+[1.141822] (frog_pkg) StdoutLine: {'line': b'copying launch/robot_system.launch.py -> /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/share/frog_pkg/launch\n'}
+[1.141887] (frog_pkg) StdoutLine: {'line': b'copying launch/my_first_launch.py -> /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/share/frog_pkg/launch\n'}
+[1.141943] (frog_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.161890] (frog_pkg) StdoutLine: {'line': b'Copying build/frog_pkg/frog_pkg.egg-info to /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/lib/python3.12/site-packages/frog_pkg-0.0.0-py3.12.egg-info\n'}
+[1.162512] (frog_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[1.202360] (-) TimerEvent: {}
+[1.288164] (frog_pkg) StdoutLine: {'line': b'Installing even_number_publisher script to /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/lib/frog_pkg\n'}
+[1.288507] (frog_pkg) StdoutLine: {'line': b"writing list of installed files to '/home/olya/ros2_ws/src/frog_pkg/build/frog_pkg/install.log'\n"}
+[1.302569] (-) TimerEvent: {}
+[1.317849] (frog_pkg) CommandEnded: {'returncode': 0}
+[1.326734] (frog_pkg) JobEnded: {'identifier': 'frog_pkg', 'rc': 0}
+[1.327259] (-) EventReactorShutdown: {}

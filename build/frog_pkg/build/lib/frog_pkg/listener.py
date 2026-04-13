@@ -6,31 +6,31 @@ from std_msgs.msg import String     # тип сообщения — строка
 class Listener(Node):
 
     def __init__(self):
-        # Даём узлу имя "overflow_listener"
-        super().__init__('overflow_listener')
+        # Даём узлу имя "listener"
+        super().__init__('listener')
 
         # Создаём подписку на топик
-        # Название топика     → 'overflow'
+        # Название топика     → 'my_chat_topic'
         # Тип сообщения       → String
         # Функция-обработчик  → self.callback
         # 10 — размер очереди
         self.subscription = self.create_subscription(
             String,
-            'overflow',
+            'my_chat_topic',
             self.callback,
             10)
 
-        self.get_logger().info("Узел overflow_listener запущен и слушает топик!")
+        self.get_logger().info("Узел listener запущен и слушает топик!")
 
     # Эта функция будет автоматически вызываться каждый раз,
     # когда придёт новое сообщение
     def callback(self, msg):
         # msg — это пришедшее сообщение
         # msg.data — это строка внутри сообщения
-        self.get_logger().info(f"!!! ПЕРЕПОЛНЕНИЕ !!! Получено значение: 100")
+        self.get_logger().info(f"Я услышал: {msg.data}")
 
-def main(args=None):
-    rclpy.init(args=args)                   # стартуем ROS 2
+def main():
+    rclpy.init()                    # стартуем ROS 2
     node = Listener()               # создаём наш узел
     try:
         rclpy.spin(node)            # крутимся и ждём сообщений

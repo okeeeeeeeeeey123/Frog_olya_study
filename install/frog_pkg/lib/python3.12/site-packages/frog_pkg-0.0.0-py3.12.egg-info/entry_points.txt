@@ -1,0 +1,2 @@
+[console_scripts]
+even_number_publisher = frog_pkg.scripts.even_number_publisher:main

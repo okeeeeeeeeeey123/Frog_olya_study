@@ -6,8 +6,8 @@ from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
 
 def get_mode_config(context):
-    #Получает значения аргументов и на их основе решает, с какими параметрами создавать узлы.
-    mode = LaunchConfiguration('mode').perform(context)#В mode будет строка: 'fast' или 'slow'
+    """Функция, которая возвращает параметры в зависимости от режима"""
+    mode = LaunchConfiguration('mode').perform(context)
     
     if mode == 'fast':
         frequency = 20.0
@@ -18,8 +18,8 @@ def get_mode_config(context):
         threshold = 150
         topic = '/even_numbers_slow'
     
-    overflow_topic = LaunchConfiguration('overflow_topic_name').perform(context)#имя топика переполнения
-    listener_name = LaunchConfiguration('listener_name').perform(context)#имя узла слушателя
+    overflow_topic = LaunchConfiguration('overflow_topic_name').perform(context)
+    listener_name = LaunchConfiguration('listener_name').perform(context)
     
     return [
         Node(
@@ -27,9 +27,9 @@ def get_mode_config(context):
             executable='even_number_publisher',
             name='even_pub',
             parameters=[
-                {'publish_frequency': frequency},# 20.0 или 5.0
-                {'overflow_threshold': threshold},# 50 или 150
-                {'topic_name': topic},# '/even_numbers_fast' или '/even_numbers_slow'
+                {'publish_frequency': frequency},
+                {'overflow_threshold': threshold},
+                {'topic_name': topic},
                 {'enable_logging': True},
                 {'overflow_topic': overflow_topic},
             ],
@@ -41,7 +41,6 @@ def get_mode_config(context):
             name=listener_name,
             remappings=[
                 ('/overflow', overflow_topic),
-                #"Всё, что идёт в /overflow, на самом деле слушай из топика overflow_topic"
             ],
             output='screen',
         ),

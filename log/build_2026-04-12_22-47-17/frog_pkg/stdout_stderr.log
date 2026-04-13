@@ -1,0 +1,58 @@
+running egg_info
+creating build/frog_pkg/frog_pkg.egg-info
+writing build/frog_pkg/frog_pkg.egg-info/PKG-INFO
+writing dependency_links to build/frog_pkg/frog_pkg.egg-info/dependency_links.txt
+writing entry points to build/frog_pkg/frog_pkg.egg-info/entry_points.txt
+writing requirements to build/frog_pkg/frog_pkg.egg-info/requires.txt
+writing top-level names to build/frog_pkg/frog_pkg.egg-info/top_level.txt
+writing manifest file 'build/frog_pkg/frog_pkg.egg-info/SOURCES.txt'
+reading manifest file 'build/frog_pkg/frog_pkg.egg-info/SOURCES.txt'
+writing manifest file 'build/frog_pkg/frog_pkg.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/olya/ros2_ws/src/frog_pkg/build/frog_pkg/build
+creating /home/olya/ros2_ws/src/frog_pkg/build/frog_pkg/build/lib
+creating /home/olya/ros2_ws/src/frog_pkg/build/frog_pkg/build/lib/frog_pkg
+copying frog_pkg/listener.py -> /home/olya/ros2_ws/src/frog_pkg/build/frog_pkg/build/lib/frog_pkg
+copying frog_pkg/talker.py -> /home/olya/ros2_ws/src/frog_pkg/build/frog_pkg/build/lib/frog_pkg
+copying frog_pkg/__init__.py -> /home/olya/ros2_ws/src/frog_pkg/build/frog_pkg/build/lib/frog_pkg
+creating /home/olya/ros2_ws/src/frog_pkg/build/frog_pkg/build/lib/frog_pkg/scripts
+copying frog_pkg/scripts/PR1_time_node.py -> /home/olya/ros2_ws/src/frog_pkg/build/frog_pkg/build/lib/frog_pkg/scripts
+copying frog_pkg/scripts/even_number_publisher.py -> /home/olya/ros2_ws/src/frog_pkg/build/frog_pkg/build/lib/frog_pkg/scripts
+copying frog_pkg/scripts/overflow_listener.py -> /home/olya/ros2_ws/src/frog_pkg/build/frog_pkg/build/lib/frog_pkg/scripts
+copying frog_pkg/scripts/first_node.py -> /home/olya/ros2_ws/src/frog_pkg/build/frog_pkg/build/lib/frog_pkg/scripts
+copying frog_pkg/scripts/__init__.py -> /home/olya/ros2_ws/src/frog_pkg/build/frog_pkg/build/lib/frog_pkg/scripts
+running install
+running install_lib
+creating /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/lib/python3.12/site-packages/frog_pkg
+creating /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/lib/python3.12/site-packages/frog_pkg/scripts
+copying /home/olya/ros2_ws/src/frog_pkg/build/frog_pkg/build/lib/frog_pkg/scripts/PR1_time_node.py -> /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/lib/python3.12/site-packages/frog_pkg/scripts
+copying /home/olya/ros2_ws/src/frog_pkg/build/frog_pkg/build/lib/frog_pkg/scripts/even_number_publisher.py -> /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/lib/python3.12/site-packages/frog_pkg/scripts
+copying /home/olya/ros2_ws/src/frog_pkg/build/frog_pkg/build/lib/frog_pkg/scripts/overflow_listener.py -> /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/lib/python3.12/site-packages/frog_pkg/scripts
+copying /home/olya/ros2_ws/src/frog_pkg/build/frog_pkg/build/lib/frog_pkg/scripts/first_node.py -> /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/lib/python3.12/site-packages/frog_pkg/scripts
+copying /home/olya/ros2_ws/src/frog_pkg/build/frog_pkg/build/lib/frog_pkg/scripts/__init__.py -> /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/lib/python3.12/site-packages/frog_pkg/scripts
+copying /home/olya/ros2_ws/src/frog_pkg/build/frog_pkg/build/lib/frog_pkg/listener.py -> /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/lib/python3.12/site-packages/frog_pkg
+copying /home/olya/ros2_ws/src/frog_pkg/build/frog_pkg/build/lib/frog_pkg/talker.py -> /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/lib/python3.12/site-packages/frog_pkg
+copying /home/olya/ros2_ws/src/frog_pkg/build/frog_pkg/build/lib/frog_pkg/__init__.py -> /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/lib/python3.12/site-packages/frog_pkg
+byte-compiling /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/lib/python3.12/site-packages/frog_pkg/scripts/PR1_time_node.py to PR1_time_node.cpython-312.pyc
+byte-compiling /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/lib/python3.12/site-packages/frog_pkg/scripts/even_number_publisher.py to even_number_publisher.cpython-312.pyc
+byte-compiling /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/lib/python3.12/site-packages/frog_pkg/scripts/overflow_listener.py to overflow_listener.cpython-312.pyc
+byte-compiling /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/lib/python3.12/site-packages/frog_pkg/scripts/first_node.py to first_node.cpython-312.pyc
+byte-compiling /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/lib/python3.12/site-packages/frog_pkg/scripts/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/lib/python3.12/site-packages/frog_pkg/listener.py to listener.cpython-312.pyc
+byte-compiling /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/lib/python3.12/site-packages/frog_pkg/talker.py to talker.cpython-312.pyc
+byte-compiling /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/lib/python3.12/site-packages/frog_pkg/__init__.py to __init__.cpython-312.pyc
+running install_data
+creating /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/share/ament_index
+creating /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/share/ament_index/resource_index
+creating /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/share/ament_index/resource_index/packages
+copying resource/frog_pkg -> /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/share/ament_index/resource_index/packages
+copying package.xml -> /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/share/frog_pkg
+creating /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/share/frog_pkg/launch
+copying launch/robot_system.launch.py -> /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/share/frog_pkg/launch
+copying launch/my_first_launch.py -> /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/share/frog_pkg/launch
+running install_egg_info
+Copying build/frog_pkg/frog_pkg.egg-info to /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/lib/python3.12/site-packages/frog_pkg-0.0.0-py3.12.egg-info
+running install_scripts
+Installing even_number_publisher script to /home/olya/ros2_ws/src/frog_pkg/install/frog_pkg/lib/frog_pkg
+writing list of installed files to '/home/olya/ros2_ws/src/frog_pkg/build/frog_pkg/install.log'
