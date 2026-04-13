@@ -24,12 +24,13 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-                        'first_node = frog_pkg.scripts.first_node:main',   # ← добавляем эту строку
+            'first_node = frog_pkg.scripts.first_node:main',   # ← добавляем эту строку
             'PR1_time_node = frog_pkg.scripts.PR1_time_node:main', 
             'talker = frog_pkg.talker:main', 
             'listener = frog_pkg.listener:main',  
             'overflow_listener = frog_pkg.scripts.overflow_listener:main',
             'even_number_publisher = frog_pkg.scripts.even_number_publisher:main',
+            'carrot_tf_broadcaster = frog_pkg.scripts.carrot_tf_broadcaster:main',
         ],
     },
 )
